@@ -9,5 +9,6 @@ class EmailAddressParser(input_file)
   
   def parse(data)
     @emails = data.split(/[, ]/)
+    @emails
   end
 end

@@ -15,5 +15,6 @@ class EmailAddressParser
         filtered << email
       end
     end
+    filtered
   end
 end

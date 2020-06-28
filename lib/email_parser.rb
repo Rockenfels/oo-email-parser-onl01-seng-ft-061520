@@ -5,7 +5,7 @@ class EmailAddressParser
     @emails = (input_file)
   end
   
-  def parse(data)
+  def parse
     parsed = @emails.split(/[, ]/)
     binding.pry
   end

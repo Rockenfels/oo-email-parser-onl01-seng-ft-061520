@@ -15,5 +15,6 @@ class EmailAddressParser
         filtered << email
       end
     binding.pry
+    end
   end
 end

@@ -1,4 +1,4 @@
-class EmailAddressParser(input_file)
+class EmailAddressParser
   
   def initialize(input_file)
     @emails = (input_file)

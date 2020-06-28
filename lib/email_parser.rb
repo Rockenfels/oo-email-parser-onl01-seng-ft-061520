@@ -1,4 +1,20 @@
-# Build a class EmailAddressParser that accepts a string of unformatted 
-# emails. The parse method on the class should separate them into
-# unique email addresses. The delimiters to support are commas (',')
-# or whitespace (' ').
+require 'pry'
+class EmailAddressParser
+  
+  def initialize(input_file)
+    @emails = (input_file)
+  end
+  
+  def parse
+    parsed = @emails.split(/[, ]/)
+    parsed = parsed.reject { |i| i == "" }
+    
+    filtered = []
+    parsed.each do |email|
+      if !filtered.include?(email)
+        filtered << email
+      end
+    end
+    filtered
+  end
+end

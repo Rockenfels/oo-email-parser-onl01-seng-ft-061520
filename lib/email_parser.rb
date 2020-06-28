@@ -1,11 +1,11 @@
 class EmailAddressParser(input_file)
   
-  def initialize
-    @input_file = input_file
-    @emails = self.parse(@input_file)
+  def initialize(input_file)
+    @emails = (input_file)
   end
   
-  def parse(data)
-    data.split(/[, ]/)
+  def parse
+    @emails.split(/[, ]/)
+    @emails
   end
 end

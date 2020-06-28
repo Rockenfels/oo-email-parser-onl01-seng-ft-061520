@@ -1,3 +1,4 @@
+require 'pry'
 class EmailAddressParser
   
   def initialize(input_file)
@@ -5,7 +6,7 @@ class EmailAddressParser
   end
   
   def parse(data)
-    @emails.split(/[, ]/)
-    @emails.to_a
+    parsed = @emails.split(/[, ]/)
+    binding.pry
   end
 end

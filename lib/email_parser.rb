@@ -14,7 +14,6 @@ class EmailAddressParser
       if !filtered.include?(email)
         filtered << email
       end
-    binding.pry
     end
   end
 end

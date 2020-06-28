@@ -7,6 +7,7 @@ class EmailAddressParser
   
   def parse
     parsed = @emails.split(/[, ]/)
+    parsed.reject
     binding.pry
   end
 end

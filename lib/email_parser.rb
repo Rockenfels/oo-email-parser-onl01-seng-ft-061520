@@ -7,7 +7,7 @@ class EmailAddressParser
   
   def parse
     parsed = @emails.split(/[, ]/)
-    parsed.reject
+    parsed.reject { |i| i == "" }
     binding.pry
   end
 end
